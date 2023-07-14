@@ -3,12 +3,18 @@ import "./App.css";
 import { Component } from "react";
 
 class App extends Component {
+  handleClick() {
+    alert("Ini Event Handling");
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Greeting name="Al Hartis" />
+
+          <button onClick={this.handleClick}>Klik</button>
         </header>
       </div>
     );
